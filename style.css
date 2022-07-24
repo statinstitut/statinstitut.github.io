@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:ital@0;1&display=swap');
+
+#logo {
+    max-width: 150px;
+}
+
+body {
+    font-family: 'Sorts Mill Goudy', 'Times New Roman', Times, serif;
+    max-width: 85%;
+    margin: auto;
+}
+
+#header {
+    padding: 10px;
+    text-align: center;
+}
+
+.big {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    animation: transform-text 2.75s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes transform-text {
+    0% {background-color: inherit;}
+    10% {background-color: black; color: whitesmoke;}
+    15% {background-color: black; color: whitesmoke; letter-spacing: 0em;}
+    20% {background-color: black; color: whitesmoke; letter-spacing: 0.1em;}
+    45% {background-color: black; color: whitesmoke; letter-spacing: 0.1em;}
+    50% {background-color: black; color: whitesmoke; letter-spacing: 0.26em;}
+    69% {background-color: black; color: whitesmoke; letter-spacing: 0.26em; font-variant: normal;}
+    70% {background-color: black; color: whitesmoke; letter-spacing: 0.2em; font-variant: small-caps;}
+    90% {background-color: black; color: whitesmoke; letter-spacing: 0.2em; font-variant: small-caps;}
+    100% {letter-spacing: 0.2em; font-variant: small-caps; background-color: inherit; color: black;}
+}
+
+#main-content {
+    max-width: 85%;
+    margin: auto;
+}
+
+#main-content img {
+    max-width: 85%;
+    margin: auto;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
