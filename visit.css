@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap');
+
+:root {
+    --delay-time: 1s;
+    --key-blue: rgb(11, 11, 40);
+}
+
+body {
+    /* background-color: rgb(239, 214, 186); */
+    background-color: lightblue;
+    background-size:cover;
+    margin: 0;
+}
+
+#mapbox {
+    max-width: 100%;
+    margin: auto;
+    animation-fill-mode: forwards;
+    animation: fadeout var(--delay-time);
+    animation-delay: calc(var(--delay-time)*4);
+}
+
+.mapboximg {
+    max-width:100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0%;
+    animation-timing-function: ease-in;
+}
+
+#f1 {
+    animation: reveal var(--delay-time);
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+
+}
+
+#f3 {
+    animation: reveal var(--delay-time);
+    animation-delay: calc(var(--delay-time)*1);
+    animation-fill-mode: forwards;
+
+}
+
+#f2 {
+    animation: reveal var(--delay-time);
+    animation-delay: calc(var(--delay-time)*2);
+    animation-fill-mode: forwards;
+
+}
+
+#f4 {
+    animation: takeover var(--delay-time);
+    animation-delay: calc(var(--delay-time)*3);
+    animation-fill-mode: forwards;
+}
+
+@keyframes reveal {
+    0% {opacity: 0%; mix-blend-mode: multiply;}
+    100% {opacity: 100%; mix-blend-mode: multiply;}
+}
+
+@keyframes takeover {
+    0% {opacity: 0%;}
+    100% {opacity: 100%;}
+}
+
+@keyframes fadeout {
+    0% {opacity: 100%;}
+    100% {opacity: 0%;}
+}
+
+#main-content {
+    padding: 10px;
+    text-align: left;
+    opacity: 0%;
+    text-shadow: rgb(250, 238, 223, 255) 0px 0px 5px;
+    animation: takeover var(--delay-time);
+    animation-delay: calc(var(--delay-time)*4);
+    animation-fill-mode: forwards;
+    margin-left: 15%;
+    font-family: 'Lora';
+    font-weight: 600;
+    color: var(--key-blue);
+    max-width: 25em;
+    /* background-color: #faebd755; */
+}
+
+@media only screen and (max-width: 1000px) {
+    #main-content {
+      margin-left: 0;
+      padding: 1em
+    }
+  }
+  
+a {
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    color: var(--key-blue);
+}
+
+a:hover {
+    transition: color 0.5s ease;
+    color: antiquewhite;
+}
+
+h1 {
+    font-size: 40pt;
+    text-shadow: 0px 0px 5px antiquewhite;
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    color: var(--key-blue);
+}
+
+#header {
+    max-width: 100%;
+    max-height: 30em;
+}
