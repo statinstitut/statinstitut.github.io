@@ -53,3 +53,11 @@ body {
 #footer {
     padding-left: 1em;
 }
+
+a {
+    color: darkcyan;
+}
+
+a:hover {
+    color: lightgrey;
+}
